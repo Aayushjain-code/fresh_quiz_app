@@ -1,0 +1,121 @@
+.home {
+	height: 45rem;
+	border-radius: .5rem;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	margin: 9rem 4rem 0rem 4rem;
+	background-color: var(--bg-color-1);
+	/* background-image: url(../../assets/images/banner-bg.png); */
+	background-size: cover;
+}
+
+.home .image {
+	flex: 1 1 45rem;
+}
+
+.home .image img {
+	width: 100%;
+}
+
+.home .content {
+	flex: 1 1 45rem;
+}
+
+.home .content h3 {
+	color: black;
+	font-size: 4rem;
+	background-color: var(--bg-color-1);
+	display: inline;
+	padding: 0.2rem;
+	border-radius: 0.5rem;
+}
+
+.home .content p {
+	color: black;
+	background-color: var(--bg-color-1);
+	font-size: 1.7rem;
+	font-weight: 300;
+	line-height: 1.7;
+	padding: 0 1rem 0 1rem;
+	margin-top: 0.2rem;
+	border-radius: 0.5rem;
+	width: 60%;
+}
+
+
+
+.cards .box-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 1.5rem;
+}
+
+.card-title {
+	color: var(--text-color-1);
+	font-size: 2.6rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.cards .box-container .box {
+	background: var(--bg-color-1);
+	border-radius: .5rem;
+	box-shadow: var(--box-shadow);
+}
+
+.cards .box-container .box .image {
+	height: 25rem;
+	width: 100%;
+	padding: 1.0rem;
+	position: relative;
+}
+
+.cards .box-container .box .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: .5rem;
+}
+
+.cards .box-container .box .image h3 {
+	position: absolute;
+	top: 2rem;
+	left: 2.5rem;
+	font-size: 2rem;
+	color: #fff;
+	background: rgb(0, 255, 76);
+	border-radius: .5rem;
+	font-weight: lighter;
+	padding: .5rem 1.5rem;
+}
+
+.cards .box-container .box .image h3 i {
+	color: var(--primary);
+}
+
+.cards .box-container .box .content {
+	padding: 1.5rem;
+	padding-top: 0;
+}
+
+.cards .box-container .box .content .price {
+	font-weight: 600;
+	color: var(--text-color-1);
+	font-size: 2.0rem;
+}
+
+.cards .box-container .box .content .price span {
+	font-weight: lighter;
+	color: var(--text-color-2);
+	font-size: 1.5rem;
+	text-decoration: line-through;
+}
+
+.cards .box-container .box .content p {
+	font-size: 1.5rem;
+	padding: .5rem 0;
+	color: var(--text-color-2);
+	line-height: 1.7;
+}
