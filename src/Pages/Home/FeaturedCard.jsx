@@ -6,15 +6,13 @@ const FeaturedCard = ({ item }) => {
     <div>
       <div className="box">
         <div className="image">
-          <img src={item.name} alt=""></img>
+          <img src={item.img.src} alt=""></img>
         </div>
-        <div className="content">
-          <h3>{item.title}</h3>
-
-          <Link className="button btn-success" to={`/rules/${item._id}`}>
-            Read more
-          </Link>
-        </div>
+        <div className="content"></div>
+        <h5>{item.title}</h5>
+        <Link className="button btn-success" to={`/rules/${item._id}`}>
+          Read more
+        </Link>
       </div>
     </div>
   );

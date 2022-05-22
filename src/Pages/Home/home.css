@@ -5,7 +5,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 1.5rem;
-	margin: 9rem 4rem 0rem 4rem;
+	margin: 12rem 4rem 0rem 4rem;
 	background-color: var(--bg-color-1);
 	/* background-image: url(../../assets/images/banner-bg.png); */
 	background-size: cover;

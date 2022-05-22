@@ -17,16 +17,6 @@ const NavBar = () => {
           <i className="fab fa-canadian-maple-leaf"></i> Fresh Quiz App
         </Link>
 
-        <form action="" className="search-form">
-          <input
-            type="search"
-            name=""
-            placeholder="Search"
-            id="searchBox"
-          ></input>
-          <label htmlFor="searchBox" className="fas fa-search"></label>
-        </form>
-
         <div className="icons">
           <span className="userName">
             hi, {authData.firstName ? authData.firstName : "User"}
