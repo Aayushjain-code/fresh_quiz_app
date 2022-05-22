@@ -1,15 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/Home";
 import "./App.css";
 import NavBar from "./Components/Header/NavBar";
 
 import { RequireAuth } from "./Components/ReqResAuth/RequireAuth";
 import { RestrictAuth } from "./Components/ReqResAuth/RestrictAuth";
 
-import Login from "./Pages/Authentication/Login";
-import SignUp from "./Pages/Authentication/Signup";
+import Login from "./Components/Authentication/Login";
+import SignUp from "./Components/Authentication/Signup";
 
-import { Rules } from "./Pages/Rules/Rules";
+import Home from "./Components/Home/Home.jsx";
+
+import { Rules } from "./Components/Rules/Rules.jsx";
 
 function App() {
   return (
