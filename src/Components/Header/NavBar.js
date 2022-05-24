@@ -2,12 +2,10 @@ import React from "react";
 import "./NavBar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-// import { useThemeContext } from "../../context/themeContext";
 
 const NavBar = () => {
   const Navigate = useNavigate();
   const { authData, logout } = useAuth();
-  //   const { theme, toggleLightDarkTheme } = useThemeContext();
 
   return (
     <div>
@@ -22,13 +20,8 @@ const NavBar = () => {
             hi, {authData.firstName ? authData.firstName : "User"}
           </span>
           <div className="fas fa-search" id="search-btn"></div>
-          {/* <div
-            onClick={toggleLightDarkTheme}
-            className={`${theme === "light" ? "fas fa-moon" : "fas fa-sun"} `}
-            id="theme-btn"
-          ></div> */}
 
-          {localStorage.getItem("videoToken") ? (
+          {localStorage.getItem("QuizToken") ? (
             <div
               className="fas  large-Nav-Icon"
               id="menu-btn"

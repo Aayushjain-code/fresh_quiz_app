@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <section className="home" id="home">
         <div className="content">
           <h3>Fell the freshness</h3>
@@ -21,8 +21,8 @@ const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. alias eos
             facilis, ipsa est asperiores repellendus!
           </p>
-          <button className="button btn-success" href="#down">
-            Explore The Categories
+          <button className="button btn-success">
+            <a href="#down">Explore The Categories</a>
           </button>
         </div>
       </section>
@@ -41,9 +41,8 @@ const Home = () => {
             })}
           </div>
         </div>
-        <div id="down"></div>
       </section>
-    </div>
+    </>
   );
 };
 

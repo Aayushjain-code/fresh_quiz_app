@@ -73,8 +73,6 @@ const Login = () => {
             className="button"
             onClick={() => {
               testlogin();
-              console.log("hello");
-              console.log("Cred:", userDetails);
             }}
           >
             Test Login

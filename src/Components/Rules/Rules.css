@@ -1,5 +1,22 @@
 .rules-container {
-	margin-top: 15rem;
-	align-items: center;
-	text-align: center;
+      margin-top: 15rem;
+      align-items: center;
+      text-align: center;
+}
+
+
+.component-display-container {
+      border: none !important;
+}
+
+
+.button-start {
+      padding: 1.5rem 2.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text-white);
+      border-radius: 5px;
+      border: transparent;
+      cursor: pointer;
+      background-color: var(--primary-light);
 }
