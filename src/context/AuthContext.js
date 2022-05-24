@@ -47,6 +47,7 @@ const AuthProvider = ({ children }) => {
         password: userDetails.password,
       });
       if (response.status === 201) {
+        localStorage.setItem("QuizToken", response.data.encodedToken);
         authDispatch({ type: "SIGN_UP", payload: response.data.createdUser });
       }
     } catch (error) {
@@ -67,6 +68,7 @@ const AuthProvider = ({ children }) => {
         password: userDetails.password,
       });
       if (response.status === 200) {
+        localStorage.setItem("QuizToken", response.data.encodedToken);
         authDispatch({ type: "LOGIN", payload: response.data.foundUser });
       }
     } catch (error) {
@@ -94,6 +96,7 @@ const AuthProvider = ({ children }) => {
         password: userPass,
       });
       if (response.status === 200) {
+        localStorage.setItem("QuizToken", response.data.encodedToken);
         authDispatch({ type: "LOGIN", payload: response.data.foundUser });
       }
     } catch (error) {
@@ -115,8 +118,10 @@ const AuthProvider = ({ children }) => {
   const logout = () => {
     authDispatch({
       type: "LOGOUT",
+
       payload: { authData: [], authErrorMsg: "" },
     });
+    localStorage.clear();
   };
 
   return (

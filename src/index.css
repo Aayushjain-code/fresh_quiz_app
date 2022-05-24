@@ -6,6 +6,7 @@
 
 :root {
 	--primary: #07ba51;
+	--primary-light: #39ff8c;
 	--primary-dark: #003918;
 	--secondary: #ffc600;
 	--secondary-dark: #ff9100;
@@ -16,7 +17,8 @@
 	--bg-color-1: #fff;
 	--bg-color-2: #eee;
 	--bg-color-3: rgb(225, 225, 225);
-	--box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+	--bg-color-4: rgb(193, 255, 183);
+	--box-shadow: rgb(31, 21, 21)a(0, 0, 0, .1);
 
 	--background-color: white;
 	--danger-color: rgb(223, 0, 0);

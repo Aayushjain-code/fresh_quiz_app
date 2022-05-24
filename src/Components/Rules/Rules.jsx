@@ -44,13 +44,9 @@ export const Rules = () => {
             <div class="grid-3-column-layout">
               <div></div>
               <div>
-                <ul className="no-bullets flex flex-column flex-gap-1">
+                <ul className="no-bullets flex flex-column ">
                   {RulesData.map((rule, index) => (
                     <li key={index} class="alert primary-alert">
-                      <i
-                        className="fa fa-hand-o-right alert-icon "
-                        aria-hidden="true"
-                      ></i>{" "}
                       {rule.description}
                     </li>
                   ))}
@@ -59,7 +55,7 @@ export const Rules = () => {
               <div></div>
             </div>
           </div>
-          <Link className="button" to={`/question/${quizId}/${0}`}>
+          <Link className="button-start" to={`/question/${quizId}/${0}`}>
             Start Quiz
           </Link>
         </article>
